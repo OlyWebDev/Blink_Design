@@ -1,0 +1,1081 @@
+/*
+Theme Name: blinkdesigntheme
+Theme URI: http://yourdomain.com
+Author: Oly Doroshev
+Author URI: http://yourdomain.com
+Description: A fully responsive WordPress theme. Perfect for designers, animators or any visual artists. 
+Version: 1.0
+Tags: responsive, full-width, design
+*/
+/* START GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+body {
+    font-size: 62.5%;
+    background-color: #fff7eb;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 5em;
+    font-weight: 200;
+}
+h4 {
+    font-size: 10em;
+    text-align: center;
+    color: #414141;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+footer {
+    position: relative;
+    width: 100%;
+    height: 25em;
+    background-color: rgba(0, 0, 0, 0.14);
+    margin-top: 14em;
+}
+/* END GENERAL */
+/* START HEADER */
+
+.active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+.navbar.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.41);
+    border: none;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    font-size: 2.4em;
+    font-weight: 300;
+    padding: 0 0 0.15em 0.7em;
+}
+.navbar-brand {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+}
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    color: #e7e7e7;
+}
+.nav {
+    padding-top: 0.2em;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+a:focus {
+    outline: none;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #cacaca;
+}
+#myNavbar ul li {
+    text-align: center;
+}
+/* START- Search Bar Styling */
+
+::-webkit-input-placeholder {
+    color: #e2e2e2 !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300 !important;
+    font-style: italic;
+    font-size: 0.9em;
+    ;
+}
+.searchform {
+    margin: 0.8em;
+}
+label.screen-reader-text {
+    display: none;
+}
+input#s {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.43);
+    border: none;
+    padding: 0.1em 0.1em 0.1em 0.7em;
+    width: 9.5em;
+    color: #fff;
+}
+input#searchsubmit {
+    display: none;
+}
+/* END Search field styling for wordpress */
+/* END HEADER */
+/* START MAIN CONTENT */
+/* START SLIDER */
+
+.mobile_bg_img {
+    display: none;
+}
+.slider_wrapper {
+    position: relative;
+}
+.introduction_message {
+    display: none;
+    position: absolute;
+    width: 40%;
+    top: 60%;
+    color: #fff;
+    z-index: 100;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 3em 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    height: 210px;
+}
+.introduction_message > h1 {
+    font-weight: 900;
+    font-size: 4.8em;
+    margin-top: 0.8em;
+    line-height: 0.3em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.48);
+}
+.introduction_message > h3 {
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.48);
+}
+.explore_button {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+    border: 1px solid #fff;
+    padding: 0.5em 1.5em;
+    margin-top: 0.8em;
+    display: inline-block;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.48);
+}
+.explore_button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+}
+.owl-theme .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    bottom: 2em;
+    margin: 0 auto;
+    width: 100%;
+}
+.owl-item {
+    width: 100%;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    background: #FFF;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+    -ms-transition: opacity 200ms ease;
+    -o-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    opacity: 0.5;
+    filter: Alpha(Opacity=50);
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #FFF;
+    opacity: 1;
+}
+.owl-carousel {
+    min-height: 200px;
+}
+/* END SLIDER */
+/* START SECOND HALF OF THE HOMEPAGE - BELOW THE SLIDER - ABOUT SECTION */
+
+.belowslider_content {
+    width: 100%;
+    max-width: 1200px;
+    margin: -5em auto;
+    padding: 0 4.5em;
+}
+h2[title = "About"] {
+    margin-top: 1.4em;
+}
+#about > h2,
+.rpwwt-widget > h2 {
+    text-align: center;
+    font-size: 7.5em;
+    font-weight: 300;
+    color: #414141;
+}
+.profile_pic.alignnone.wp-image-57.size-full {
+    padding: 1.5em 0;
+    width: 100%;
+}
+img.profile_pic.alignnone.wp-image-57.size-full {
+    width: 100%;
+    height: auto !important;
+}
+#rpwwt-recent-posts-widget-with-thumbnails-2.rpwwt-widget > h2 {
+    padding: 0.6em 0;
+}
+#rpwwt-recent-posts-widget-with-thumbnails-2.rpwwt-widget > ul {
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+    place-content: space-between;
+    padding: 0;
+}
+#rpwwt-recent-posts-widget-with-thumbnails-2.rpwwt-widget > ul > li {
+    padding: 0;
+    width: 29.8%;
+}
+#rpwwt-recent-posts-widget-with-thumbnails-2.rpwwt-widget > ul > li > a >img {
+    width: 100%;
+    height: auto;
+}
+#rpwwt-recent-posts-widget-with-thumbnails-2.rpwwt-widget > ul > li > a > span.rpwwt-post-title {
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    padding-top: 0.5em;
+    color: #414141;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+/* END Recent Posts Widget Theme Corrections */
+/* END SECOND HALF OF THE HOMEPAGE - BELOW THE SLIDER - ABOUT SECTION */
+/* START the other header - the one that us present on each page besides the homepage */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    overflow: hidden;
+}
+.header_background_wrapper {
+    position: relative;
+}
+.header_background_wrapper > img {
+    width: 100%;
+}
+.header_background_wrapper > h1 {
+    position: relative;
+    left: 60px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 8.5em;
+    top: -130px;
+}
+/* END the second header */
+/* START BLOG = HOME Page styling corrections */
+
+.belowslider_content > h2:first-child {
+    margin-top: 0;
+    position: absolute;
+}
+.belowslider_content > h5:nth-child(2) {
+    padding-top: 2.1em;
+    padding-bottom: 0.1em;
+}
+.belowslider_content > h2 {
+    margin-top: 1em;
+}
+.belowslider_content > h2 > a {
+    margin: 0;
+    font-weight: 300;
+    color: #414141;
+}
+.belowslider_content > h2 > a:hover,
+.belowslider_content > h2 > a:focus {
+    text-decoration: none;
+    opacity: 0.87;
+}
+.belowslider_content > h5 {
+    color: #616161;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+.blog {
+    position: absolute;
+    left: 60px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 7.5em;
+    top: 41%;
+    transform: translateY(-40%);
+}
+.feature_img {
+    padding: 2em 0;
+}
+.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    max-width: 1200px;
+    height: auto;
+}
+/* Images that exist but currently set to display none */
+
+.aligncenter.wp-image-196.size-large,
+.aligncenter.wp-image-187.size-large,
+.alignright.wp-image-195.size-large,
+.aligncenter.wp-image-190.size-large,
+.alignright.wp-image-193.size-medium,
+.alignright.wp-image-194.size-large,
+.size-medium.wp-image-160.aligncenter,
+.size-medium.wp-image-159.aligncenter,
+.wp-image-144.size-medium.alignright,
+.wp-image-137.size-medium.alignright,
+.aligncenter.wp-image-158.size-full,
+.aligncenter.wp-image-136.size-large,
+.alignright.wp-image-120,
+.alignright.size-medium.wp-image-117,
+.alignright.size-medium.wp-image-119,
+.alignright.wp-image-87,
+.alignright.wp-image-84,
+.alignright.wp-image-86 {
+    display: none;
+}
+.wp-image-191.size-large.aligncenter,
+.alignright.wp-image-215.size-large,
+.alignright.wp-image-85.size-large,
+.attachment-post-thumbnail.size-post-thumbnail.wp-post-image,
+.aligncenter.wp-image-264.size-large,
+.aligncenter.wp-image-265.size-full {
+    width: 100%;
+    height: auto;
+}
+.alignright.wp-image-85.size-large {
+    padding-bottom: 1.5em;
+}
+.aligncenter.wp-image-265.size-full,
+.aligncenter.wp-image-264.size-large {
+    padding-bottom: 0.8em;
+}
+.aligncenter.wp-image-265.size-full {
+    height: auto !important;
+}
+/* Pagination */
+
+div.pagination {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    color: #818181;
+    width: 100%;
+}
+ol.wp-paginate.wpp-modern-grey.font-inherit {
+    font-size: 16px;
+}
+/* Categoties - not a page just the items */
+
+.post-categories {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 0;
+}
+.post-categories:before {
+    content: "Categories:";
+    padding-right: 0.5em;
+    font-weight: 400;
+}
+.post-categories > li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0.2em;
+}
+.post-categories > li > a {
+    color: #414141;
+    border: 1px solid #818181;
+    padding: 0.2em 0.6em;
+}
+.post-categories > li > a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 244, 225, 0.82);
+}
+/* END BLOG = HOME Page styling corrections */
+/* START SINGLE PAGE */
+
+.belowslider_content[attribute = "sub-pages"] {
+    margin: -7em auto;
+}
+h2[title = "pages"] {
+    margin: 0;
+    font-weight: 300;
+    color: #414141;
+}
+.belowslider_content h5 {
+    color: #616161;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+.picture > .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    width: 100%;
+    height: auto !important;
+    padding: 2em 0;
+}
+.tags {
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 1.3em;
+}
+.tags[attribute = "post-tags"]:before {
+    content: "Tags:";
+    padding-right: 0.5em;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.tags > a {
+    background-color: rgba(0, 0, 0, 0.86);
+    color: #fff;
+    padding: 0 0.7em;
+    margin: 0.2em;
+    line-height: 2.2em;
+    display: inline-block !important;
+}
+.tags > a:hover {
+    text-decoration: none;
+    opacity: 0.93;
+}
+.previous-post,
+.next-post {
+    font-size: 2em;
+    margin: 2em 0 -2em 0;
+    color: #818181;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+}
+.previous-post:hover,
+.next-post:hover {
+    text-decoration: underline;
+}
+.next-post {
+    float: right;
+}
+.next-post:after {
+    content: ">>";
+    color: #414141;
+}
+.previous-post:before {
+    content: "<<";
+    color: #414141;
+}
+.next-post> a,
+.previous-post > a {
+    color: #414141;
+    font-weight: 400;
+}
+.addtoany_share_save_container.addtoany_content_bottom {
+    display: none;
+}
+.a2a_kit.a2a_kit_size_32.a2a_default_style {
+    margin: 7em auto 0 auto;
+    display: table;
+}
+.a2a_button_google_plus,
+.a2a_button_facebook {
+    margin: 0 1em;
+}
+.fvp-onload {
+    display: none;
+}
+iframe[title = '"How to handle a child" - Book Trailer'] {
+    width: 100%;
+    padding: 10em 0;
+    height: 765px;
+}
+div.featured-video-plus.post-thumbnail.fvp-responsive.fvp-vimeo.fvp-center {
+    margin-top: -10em;
+    margin-bottom: -11em;
+}
+.tag-video > h5 {
+    padding-bottom: 1em;
+    color: #616161;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+.tag-video > p:nth-of-type(2) {
+    padding-top: 1em;
+}
+.tag-video > .previous-post:hover,
+.tag-video > .next-post:hover {
+    text-decoration: underline !important;
+}
+.tag-telaviv > .next-post:after {
+    content: "";
+}
+/* END SINGLE PAGE */
+/* START CONTACT */
+
+.wpcf7-form:before {
+    content: "Let's Talk!";
+    font-size: 5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #414141;
+    position: relative;
+    top: -20px;
+}
+.wpcf7-form {
+    text-align: center;
+}
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required,
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-textarea {
+    border-radius: 3px;
+    border-style: none;
+    border: 1px solid #818181;
+    padding: 0 0.5em;
+    font-size: 16px;
+    padding: 0.2em 0.5em;
+}
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.wpcf7-not-valid {
+    border-color: red;
+}
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required:focus {
+    border-style: inset;
+    border-width: 1px;
+}
+input.wpcf7-form-control.wpcf7-submit {
+    display: inline-block;
+    padding: 0.2em 1.5em;
+    border-radius: 3px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+div.wpcf7-response-output.wpcf7-validation-errors {
+    font-size: 16px;
+    color: red;
+    width: 235px;
+    margin: auto;
+}
+label {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #414141;
+    font-size: 14px;
+}
+/* alert */
+
+.screen-reader-response {
+    display: none;
+}
+span.wpcf7-form-control-wrap.your-email {
+    position: relative !important;
+}
+span.wpcf7-form-control-wrap.your-name {
+    position: relative !important;
+}
+span.wpcf7-form-control-wrap.your-email span.wpcf7-not-valid-tip,
+span.wpcf7-form-control-wrap.your-name span.wpcf7-not-valid-tip {
+    position: absolute;
+    text-align: center;
+    left: 110px;
+    transform: translateY(18%);
+    color: red;
+}
+/* END CONTACT */
+/* START SEARCH PAGE */
+
+.alignright.wp-image-215.size-large {
+    padding: 1em 0;
+}
+.wp-image-191.size-large.aligncenter {
+    padding: 0.8em 0;
+}
+h2[title = "search"] {
+    margin-top: 1.3em;
+}
+/* END SEARCH PAGE */
+/* START CATEGORY PAGE  */
+
+.tags[attribute = "post-tags"] {
+    padding: 0.1em 0 1.3em 0;
+}
+.post-categories {
+    padding-bottom: 0.5em;
+}
+/* END CATEGORY PAGE */
+/* START ARCHIVE */
+
+.archive_page {
+    font-size: 16px;
+}
+.archive_page h2 {
+    font-weight: 300;
+    color: #414141;
+    font-size: 2em;
+    position: static !important;
+    margin: 1em 0 0.4em 0.48em !important;
+}
+ol {
+    color: #337ab7;
+}
+ol > li > a:hover,
+.archive_page ul > li > a:hover {
+    text-decoration: none;
+}
+.archive_page ul {
+    list-style: none;
+    padding-left: 1em;
+}
+.archive_articles,
+.month_archive {
+    display: inline-block;
+    width: 49%;
+    float: left;
+}
+.category_archive {
+    display: inline-block;
+    width: 49%;
+    float: left;
+    margin-top: -1em;
+}
+.month_archive {
+    vertical-align: top;
+}
+/* END ARCHIVE */
+/* START FOOTER */
+
+.icon_container {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    -webkit-transform: translate(-50%, -90%);
+    -moz-transform: translate(-50%, -90%);
+    -ms-transform: translate(-50%, -90%);
+    -o-transform: translate(-50%, -90%);
+    transform: translate(-50%, -90%);
+}
+.icon_container a {
+    font-size: 3.5em;
+    padding: 0 0.3em;
+    color: #616161;
+}
+footer > p {
+    position: absolute;
+    left: 50%;
+    top: 64%;
+    -webkit-transform: translate(-50%, 40%);
+    -moz-transform: translate(-50%, 40%);
+    -ms-transform: translate(-50%, 40%);
+    -o-transform: translate(-50%, 40%);
+    transform: translate(-50%, 40%);
+    font-size: 2.3em;
+}
+.archives {
+    position: absolute;
+    left: 50%;
+    top: 14%;
+    -webkit-transform: translate(-50%, 40%);
+    -moz-transform: translate(-50%, 40%);
+    -ms-transform: translate(-50%, 40%);
+    -o-transform: translate(-50%, 40%);
+    transform: translate(-50%, 40%);
+    font-size: 2.3em;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: #515151;
+    font-size: 18px;
+}
+.archives:hover,
+.archives:active,
+.archives:focus {
+    text-decoration: none;
+    opacity: 0.9;
+    color: #515151;
+}
+footer {
+    position: sticky;
+    top: 100%;
+}
+/* END FOOTER */
+/*  RESPONSIVE STYLING - MEDIA QUERIES */
+
+@media screen and (max-width: 1220px) {
+    .introduction_message {
+        top: 58%;
+        height: 33%;
+        display: none;
+    }
+    .header_background_wrapper > h1 {
+        font-size: 6em;
+        left: 25px;
+        top: -100px;
+    }
+    h2[title = "About"] {
+        margin-top: 1.2em;
+    }
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 707px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .introduction_message {
+        top: 48%;
+        height: 38.5%;
+        width: 50%;
+        left: 24.5%;
+        display: none;
+    }
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 610px;
+    }
+}
+@media screen and (max-width: 991px) {
+    p:first-of-type > label {
+        padding-top: 1em;
+    }
+    .wpcf7-form:before {
+        top: 0;
+    }
+    h2[title = "About"] {
+        margin-top: 1.2em;
+    }
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 590px;
+    }
+    .month_archive,
+    .category_archive,
+    .archive_articles {
+        clear: both;
+        width: 100%;
+    }
+    footer > p {
+	    top: 60%;
+        font-size: 2.4em;
+    }
+}
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 59%;
+    }
+    .navbar-toggle {
+        border: 0px solid transparent;
+    }
+    .navbar-inverse .navbar-toggle:focus,
+    .navbar-inverse .navbar-toggle:hover {
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+    }
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:focus,
+    .navbar-inverse .navbar-nav>.active>a:hover {
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+    }
+    .navbar.navbar-inverse {
+        background-color: rgba(0, 0, 0, 0.87);
+    }
+    .introduction_message {
+        z-index: 1;
+    }
+    .title_andtexts {
+        clear: both;
+        width: 100%;
+    }
+    .title_andtexts > h2 {
+        font-size: 6em;
+    }
+    #about > img {
+        clear: both;
+        width: 100%;
+        margin-top: 5em;
+    }
+    .recent_postswrapper > h2 {
+        margin: 0 0 1.2em 0;
+    }
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 540px;
+    }
+}
+@media screen and (max-width: 825px) {
+    .introduction_message {
+        top: 33%;
+        height: 45%;
+        display: none;
+    }
+    #myNavbar ul li {
+        text-align: center;
+    }
+    #myNavbar ul li a {
+        font-size: 1.15em;
+    }
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 500px;
+    }
+    .archive_articles {
+	    padding-top: 1em;
+    }
+}
+@media screen and (max-width: 715px) {
+    .introduction_message {
+	    display: none;
+        top: 28%;
+        height: 55%;
+        width: 70%;
+        left: 15%;
+    }
+    .header_background_wrapper > h1 {
+        font-size: 4.5em;
+        top: -80px;
+    }
+    h2[title = "pages"] {
+        font-size: 4.5em;
+        margin: 0.7em 0 -0.2em;
+    }
+    .picture > .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+        padding: 1em 0;
+    }
+    .newest_posts {
+        display: block;
+    }
+    .new_post {
+        width: 100%;
+        margin-bottom: 8em;
+    }
+    .new_post > figcaption {
+        padding-top: 1em;
+    }
+    figcaption > a {
+        font-size: 1.2em;
+    }
+    h4 {
+        font-size: 6em;
+    }
+    footer {
+        margin-top: 11em;
+    }
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 450px;
+    }
+}
+@media screen and (max-width: 639px) {
+    .icon_container {
+        top: 60%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .explore_button {
+        margin-top: 0;
+    }
+    .header_background_wrapper > img {
+        width: 160%;
+        margin-top: 3em;
+    }
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 380px;
+    }
+    .archives {
+        top: 15%;
+    }
+}
+@media screen and (max-width: 520px) {
+    .introduction_message > h1 {
+        margin-top: 0.1em;
+    }
+    #rpwwt-recent-posts-widget-with-thumbnails-2.rpwwt-widget > h2 {
+        padding: 0.5em 0;
+        margin-bottom: 0;
+    }
+    .profile_pic.alignnone.wp-image-57.size-full {
+        padding: 1em 0;
+    }
+    #rpwwt-recent-posts-widget-with-thumbnails-2.rpwwt-widget > ul {
+        display: block;
+    }
+    #rpwwt-recent-posts-widget-with-thumbnails-2.rpwwt-widget > ul > li {
+        width: 100%;
+        padding-bottom: 4em;
+    }
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 360px;
+    }
+    footer {
+        margin-top: 8em;
+    }
+}
+@media screen and (max-width: 480px) {
+    .no-js .owl-carousel,
+    .owl-carousel.owl-loaded {
+        display: none;
+    }
+    .mobile_bg_img {
+        display: block;
+        overflow-x: hidden;
+    }
+    .mobile_bg_img > img {
+        height: 100vh;
+    }
+    .introduction_message {
+        top: 57%;
+        height: 25%;
+        width: 90%;
+        left: 5%;
+        display: none;
+    }
+    .introduction_message > h1 {
+        margin-top: 0;
+        font-size: 4em;
+        line-height: 1.4em;
+    }
+    .introduction_message > h3 {
+        margin: 0;
+    }
+    .explore_button {
+        margin-top: 0.8em;
+    }
+    #about > h2,
+    .rpwwt-widget > h2 {
+        font-size: 6em;
+    }
+    .profile_pic.alignnone.wp-image-57.size-full {
+        margin-top: -1em;
+    }
+    .belowslider_content {
+        padding: 0 2.5em;
+    }
+    h2[title = "pages"] {
+        font-size: 3.8em;
+    }
+    .title_andtexts {
+        margin-top: 3em;
+    }
+    .recent_postswrapper {
+        margin-top: 3em;
+    }
+    .recent_postswrapper >h2 {
+        margin: 0 0 1em 0;
+    }
+    .new_post {
+        margin-bottom: 5em;
+    }
+    form.wpcf7-form {
+    	margin-top: -20px;
+   	}
+    /* contact */
+    
+    input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.wpcf7-not-valid,
+    input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.wpcf7-not-valid,
+    .wpcf7-form-control.wpcf7-text,
+    .wpcf7-form-control.wpcf7-textarea,
+    input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+        width: 100%;
+        padding: 0.3em 0.5em;
+    }
+    span.wpcf7-form-control-wrap.your-email span.wpcf7-not-valid-tip,
+    span.wpcf7-form-control-wrap.your-name span.wpcf7-not-valid-tip {
+        left: 1em;
+        font-size: 14px;
+        transform: translateY(23%);
+    }
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 340px;
+    }
+    .aligncenter.wp-image-265.size-full,
+    .aligncenter.wp-image-264.size-large {
+        padding-bottom: 0.3em;
+    }
+    .archive_page {
+        margin: -3.5em auto;
+    }
+    .archive_page h2 {
+        font-size: 25px;
+    }
+    footer {
+        overflow-y: hidden;
+        height: 28em;
+    }
+    footer > p {
+        position: static;
+        transform: none;
+        font-size: 14.5px;
+        text-align: center;
+        line-height: 220px;
+    }
+    .icon_container {
+        top: 55%;
+    }
+}
+@media screen and (max-width: 400px) {
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 389px) {
+    .icon_container {
+        top: 90px;
+    }
+    .archive_page h2 {
+        font-size: 19px;
+        font-weight: 400;
+    }
+    .month_archive {
+        margin-bottom: 0.4em;
+    }
+    .archive_articles > ol {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 320px) {
+    iframe[title = '"How to handle a child" - Book Trailer'] {
+        height: 260px;
+    }
+    body {
+        font-size: 55%;
+    }
+    p,
+    #rpwwt-recent-posts-widget-with-thumbnails-2.rpwwt-widget > ul > li > a > span.rpwwt-post-title {
+        font-size: 14px;
+    }
+}

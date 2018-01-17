@@ -1,0 +1,143 @@
+@media screen and (max-width: 1220px) {
+    .introduction_message {
+        top: 58%;
+        height: 33%;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .introduction_message {
+        top: 48%;
+        height: 38.5%;
+        width: 50%;
+        left: 24.5%;
+    }
+}
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 59%;
+    }
+    .navbar-toggle {
+        border: 0px solid transparent;
+    }
+    .navbar-inverse .navbar-toggle:focus,
+    .navbar-inverse .navbar-toggle:hover {
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+    }
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:focus,
+    .navbar-inverse .navbar-nav>.active>a:hover {
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+    }
+    .navbar.navbar-inverse {
+        background-color: rgba(0, 0, 0, 0.87);
+    }
+    .introduction_message {
+        z-index: 1;
+    }
+    .belowslider_content {
+        margin: 1em auto;
+    }
+    .title_andtexts {
+        clear: both;
+        width: 100%;
+    }
+    .title_andtexts > h2 {
+        font-size: 6em;
+    }
+    #about > img {
+        clear: both;
+        width: 100%;
+        margin-top: 5em;
+    }
+    .recent_postswrapper > h2 {
+        margin: 0 0 1.2em 0;
+    }
+}
+@media screen and (max-width: 825px) {
+    .introduction_message {
+        top: 33%;
+        height: 45%;
+    }
+    #myNavbar ul li {
+	    text-align: center;
+    }
+    #myNavbar ul li a {
+	    font-size: 1.15em;
+    }
+}
+@media screen and (max-width: 715px) {
+    .introduction_message {
+        top: 28%;
+        height: 55%;
+        width: 70%;
+        left: 15%;
+    }
+    .newest_posts {
+        display: block;
+    }
+    .new_post {
+        width: 100%;
+        margin-bottom: 8em;
+    }
+    .new_post > figcaption {
+        padding-top: 1em;
+    }
+    figcaption > a {
+        font-size: 1.2em;
+    }
+    footer {
+        margin-top: 11em;
+    }
+}
+@media screen and (max-width: 580px) {
+    .explore_button {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 520px) {
+    .introduction_message > h1 {
+        margin-top: 0.1em;
+    }
+}
+@media screen and (max-width: 480px) {
+    .no-js .owl-carousel,
+    .owl-carousel.owl-loaded {
+        display: none;
+    }
+    .mobile_bg_img {
+        display: block;
+    }
+    .mobile_bg_img > img {
+        height: 115em;
+    }
+    .introduction_message {
+        top: 57%;
+        height: 30%;
+        width: 90%;
+        left: 5%;
+    }
+    .introduction_message > h1 {
+        margin-top: 0.8em;
+        font-size: 4em;
+    }
+    .explore_button {
+        margin-top: 0.8em;
+    }
+    .title_andtexts {
+        margin-top: 3em;
+    }
+    .recent_postswrapper {
+        margin-top: 8em;
+    }
+    .recent_postswrapper >h2 {
+        margin: 0 0 1em 0;
+    }
+    .new_post {
+        margin-bottom: 5em;
+    }
+    footer >p {
+        font-size: 1.8em;
+    }
+}
